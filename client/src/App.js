@@ -12,6 +12,7 @@ function App() {
     const file = acceptedFiles[0];
     setUploadedFile(file);
 
+    
     const reader = new FileReader();
     reader.onload = function (e) {
       const data = new Uint8Array(e.target.result);
